@@ -1,0 +1,124 @@
+/* Body */
+.container{
+    display: flex;
+    gap: 80px;
+}
+/* icono */
+.container-icon{
+    margin-top: 40px;
+    width: 120px;
+    margin-left: auto;
+}
+/* area de texto */
+.container-div1{
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    width: 800px;
+    border-radius: 24px;
+    align-items: center;
+}
+.container-div1>h1{
+    margin-top: 50px;
+    color: #0A3871;
+}
+.container-tex{
+    margin-top: 60px;
+    resize: none;
+    width: 90%;
+    height: 60%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    color: #0A3871;
+}
+.container-advertencia{
+    align-self: flex-start;
+    margin: 0 0 40px 40px;
+}
+.container-botones{
+    display: flex;
+    width: 90%;
+    height: 67px;
+    gap: 24px;
+}
+.boton-1{
+    width: 328px;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+}
+.boton-1:hover{
+    background: white;
+    color: #0A3871;
+    border: #0A3871 solid 1px;
+}
+.boton-2{
+    width: 328px;
+    border-radius: 24px;
+    background: #0A3871;
+    color:white;
+    font-size: 16px;
+}
+.boton-2:hover{
+    background: white;
+    color: #0A3871;
+    border: #0A3871 solid 1px;
+}
+/* Texto de salida */
+.container-div3{
+    display: none;
+    flex-direction: column;
+    width: 600px;
+    height: 900px;
+    margin: 40px auto 0 0 ;
+    background: white;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.container-salida-tex{
+    font-size: 20px;
+    height: 70%;
+    width: 90%;
+    margin:100px 40px 0 50px;
+    word-wrap: break-word;
+    color: black;
+}
+.boton-copiar{
+    height: 67px;
+    width: 336px;
+    border-radius: 24px;
+    border: solid 1px #0A3871;
+    background: white;
+    color:#0A3871;
+    font-size: 16px;
+}
+.boton-copiar:hover{
+    background: #0A3871;
+    color:white;
+}
+
+/* ocultar y mostrar div como imagen*/
+.container-div2{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 900px;
+    margin: 40px auto 0 0 ;
+    background: white;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+}
+.container-div2>p{
+    width: 75%;
+    text-align: center;
+    font-size: 16px;
+}

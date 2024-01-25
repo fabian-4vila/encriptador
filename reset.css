@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #F3F5FC ;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+section{
+    margin: 0;
+    padding: 0;
+}
+textarea{
+    background-color: #E9ECF8;
+    color: #757FB2;
+}
+p{
+    color: #495057;
+    margin: 0;
+    padding: 0;
+}
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+span{
+    margin: 0;
+    padding: 0;
+    
+}

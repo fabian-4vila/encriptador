@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section>
-        <div>
-            <div>icono A</div>
-            <textarea name="texto" id="" cols="30" rows="10"></textarea>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="reset.css"/>
+  </head>
+  <body class="container">
+        <div class="container-icon">
+            <img src="/public/Logo.png" alt="logo" />
         </div>
-        <div>
-            <textarea name="texto" id="" cols="30" rows="10"></textarea>
-            <button>copiar</button>
+      <div class="container-div1">
+        <h1>Reto Alura</h1>
+        <textarea class="container-tex" name="texto" id="inputEntrada" cols="30" rows="10"></textarea>
+        <p class="container-advertencia"><span>ℹ️</span> solo letras minusculas sin acentos</p>
+        <div class="container-botones">
+            <button class="boton-1" onclick="encriptar">Encriptar</button>
+            <button class="boton-2" onclick="desencriptar">Desencriptar</button>
         </div>
-    </section>
+      </div>
+      <div class="container-div2">
+        <img src="/public/Muñeco.png" alt="muñeco">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div class="container-div3">
+        <p class="container-salida-tex">  </p>
+        <button class="boton-copiar" onclick="copiar">copiar</button>
+      </div>
 </body>
-<script src="scripts.js"></script>
+<script src="logica.js"></script>
 </html>
