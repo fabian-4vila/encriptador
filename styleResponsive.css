@@ -42,14 +42,6 @@
     margin: 0 0 40px 40px;
     color: #0A3871;
 }
-.container-advertencia>span{
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    height: 100%;
-    background: #0a387152;
-    border-radius: 50%;
-}
 .container-botones{
     display: flex;
     width: 90%;
