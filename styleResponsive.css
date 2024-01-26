@@ -150,7 +150,7 @@
         display: grid;
         width: 100%;
         grid-template-columns: repeat(10, minmax(0, 1fr));
-        grid-template-rows: 100px  repeat(2, minmax(200px, 1fr)) 300px;
+        grid-template-rows: 90px  repeat(2, minmax(200px, 1fr)) 300px;
         column-gap: 0;
         row-gap: 10px;
     }
@@ -164,9 +164,15 @@
         grid-column: 2/10;
         grid-row: 2/4;
         width: 100%;
-        margin-top: 40px;
+        margin: 0;
+        margin-top: 20px;
         justify-self: center;
         align-items: center;
+    }
+    .container-tex{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 10px;
     }
     .container-advertencia{
         margin: 0;
