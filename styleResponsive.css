@@ -202,16 +202,16 @@
     .container-div2>img{
         width: 150px;
     }
+    .container-div2>h2{
+        margin: 15px 0 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
     .container-div2>p{
         text-align: center;
         justify-content: center;
         font-size: 12px;
-    }
-    .container-div2>h2{
-        margin: 10px 0 10px 0;
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
     }
     .container-div3{
         grid-column: 2/10;
