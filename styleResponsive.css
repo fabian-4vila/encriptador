@@ -1,11 +1,12 @@
 /*body*/
 .container {
     display: grid;
-    grid-template-columns: minmax(160px, 200px) repeat(2, minmax(300px, 1fr));
+    grid-template-columns: minmax(120px, 160px) repeat(2, minmax(300px, 1fr));
     grid-template-rows: repeat(10, minmax(0, 1fr));
     justify-content: center;
     min-height: 100vh;
-    column-gap: 80px;
+    max-height: 100vh;
+    column-gap: 60px;
 }
 .container-icon{
     grid-column: 1/2;
@@ -13,11 +14,14 @@
     margin-top: 40px;
     justify-self: center;
 }
+.container-icon>img{
+    width: 95%;
+}
 .container-div1{
     display: flex;
     flex-direction: column;
     grid-column: 2/3;
-    grid-row: 1/10;
+    grid-row: 1/11;
     width: 90%;
     margin-top: 40px;
     justify-self: center;
@@ -53,14 +57,15 @@
     border-radius: 24px;
     background: #0A3871;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
+    white-space: nowrap;
 }
 .boton-2{
     width: 50%;
     border-radius: 24px;
     background: #0A3871;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
 }
 .boton-1:hover{
     background: white;
@@ -76,10 +81,10 @@
     display: flex;
     flex-direction: column;
     grid-column: 3/4;
-    grid-row: 1/10;
+    grid-row: 1/11;
     flex-direction: column;
     width: 80%;
-    margin: 40px auto 0 0 ;
+    margin: 40px 0 40px 0 ;
     background: white;
     border: solid 1px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
@@ -88,16 +93,24 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     gap: 20px;
 }
+.container-div2>h2{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    font-size: 1.5em;
+}
 .container-div2>p{
     width: 65%;
     text-align: center;
     font-size: 16px;
 }
+.container-div2>img{
+    width: 70%;
+}
 .container-div3{
     display: none;
     flex-direction: column;
     grid-column: 3/4;
-    grid-row: 1/10;
+    grid-row: 1/11;
     width: 80%;
     margin-top: 40px;
     background: white;
@@ -105,25 +118,191 @@
     border-radius: 24px;
     align-items: center;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    margin: 40px 0 40px 0 ;
 }
 .container-salida-tex{
     font-size: 20px;
-    height: 67%;
-    width: 85%;
-    margin:100px 40px 0 40px;
+    height: 66%;
+    width: 90%;
+    margin:70px 40px 50px 40px;
     word-wrap: break-word;
+    overflow-y: auto;
     color: black;
 }
 .boton-copiar{
     height: 67px;
-    width: 336px;
+    width: 70%;
     border-radius: 24px;
     border: solid 1px #0A3871;
     background: white;
     color:#0A3871;
-    font-size: 16px;
+    font-size: 1em;
 }
 .boton-copiar:hover{
     background: #0A3871;
     color:white;
+}
+
+/* estilo tableta */
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+        grid-template-rows: 100px  repeat(2, minmax(200px, 1fr)) 300px;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+    .container-icon{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .container-div1{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/10;
+        grid-row: 2/4;
+        width: 100%;
+        margin-top: 40px;
+        justify-self: center;
+        align-items: center;
+    }
+    .container-advertencia{
+        margin: 0;
+        text-align: center;
+        margin: 0 0 20px 20px;
+        color: #0A3871;
+    }
+    .container-botones{
+        display: flex;
+        width: 90%;
+        height: 50px;
+        gap: 24px;
+        justify-content: center;
+    }
+    .boton-1{
+        width: 40%;
+    }
+    .boton-2{
+        width: 40%;
+    }
+    .container-div2{
+        display: flex;
+        grid-column: 2/10;
+        grid-row: 4/5;
+        width: 100%;
+        margin: 0;
+        background: white;
+        border-radius: 24px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        gap: 0;
+        margin-bottom: 20px;
+    }
+    .container-div2>img{
+        width: 200px;
+    }
+    .container-div2>p{
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .container-div2>h2{
+        margin: 10px 0 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .container-div3{
+        grid-column: 2/10;
+        grid-row: 4/5;
+        width: 100%;
+        margin: 0;
+        background: white;
+        border-radius: 24px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .container-salida-tex{
+        font-size: 16px;
+        height: 66%;
+        width: 85%;
+        margin: 30px 40px 0 40px;
+        word-wrap: break-word;
+        overflow-y: auto;
+        color: black;
+    }
+    .boton-copiar{
+        height: 50px;
+        width: 90%;
+        border-radius: 24px;
+        border: solid 1px #0A3871;
+        background: white;
+        color:#0A3871;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+  }
+
+
+/*estilo celular */
+
+@media screen and (max-width: 375px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+        grid-template-rows: 80px  repeat(2, minmax(150px, 1fr)) 250px;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+    .container-botones{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 134px;
+        gap: 10px;
+        align-items: center;
+    }
+    .boton-1,.boton-2{
+        width: 90%;
+        height: 50%;
+        border-radius: 24px;
+        background: #0A3871;
+        color: white;
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    .boton-2{
+        width: 90%;
+
+        border-radius: 24px;
+        background: #0A3871;
+        color: white;
+        font-size: 1em;
+    }
+    
+    .container-advertencia{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
+        color: #0A3871;
+        font-size: 16px;
+    }
+    .container-div2>img{
+        width: 100px;
+    }
+    .container-div2>p{
+        text-align: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .container-div2>h2{
+        margin: 10px 0 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    
 }
