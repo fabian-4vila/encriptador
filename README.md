@@ -40,3 +40,4 @@ Si deseas ejecutar el proyecto localmente:
 git clone https://github.com/Fabian-4vila/encriptador.git
 ```
 #### - Abre el archivo index.html en tu navegador
+## 📁 Estructura recomendada de carpetas
