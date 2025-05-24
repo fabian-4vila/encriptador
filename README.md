@@ -35,7 +35,7 @@ Presiona el botón de Desencriptar para recuperar el texto original.
 
 Si deseas ejecutar el proyecto localmente:
 
-#### - Clona este repositorio
+- Clona este repositorio
 ```bash
 git clone https://github.com/Fabian-4vila/encriptador.git
 ```
