@@ -41,3 +41,15 @@ git clone https://github.com/Fabian-4vila/encriptador.git
 ```
 #### - Abre el archivo index.html en tu navegador
 ## 📁 Estructura recomendada de carpetas
+```bash
+encriptador/
+├── 📁 public/
+│      ├──Logo.png
+│      ├──Muñeco.png
+│      └── Fabian3.png            
+├── index.html               
+├── reset.css                # CSS para resetear estilos por defecto
+├── styleResponsive.css      # CSS con estilos responsive
+├── logica.js                # Lógica JavaScript para encriptador
+└── README.md                    # Documentación del proyecto
+```
